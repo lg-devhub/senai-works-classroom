@@ -25,7 +25,7 @@
 
       <div class="hero-image">
         <div class="image-content">
-          <span>🐶</span>
+
           <strong>ADOTE UM AMIGO</strong>
           <small>Uma nova história começa aqui.</small>
         </div>
@@ -135,19 +135,13 @@
 .hero-image {
   height: 290px;
   border-radius: 12px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(23, 107, 85, 0.2),
-      rgba(239, 190, 89, 0.4)
-    ),
-    #f0c967;
-
+  background-image:url("/src/assets/main-dog.jpg");
+  filter: brightness(80%);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0 12px 30px rgba(23, 107, 85, 0.15);
   overflow: hidden;
 }
@@ -166,11 +160,13 @@
 .image-content strong {
   display: block;
   font-size: 28px;
+  filter: brightness(180%);
 }
 
 .image-content small {
   display: block;
   margin-top: 5px;
+  filter: brightness(180%);
 }
 
 /* CARDS */
